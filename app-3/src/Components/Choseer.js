@@ -11,6 +11,9 @@ class Chooser extends Component{
     }
 
     handleChange(value){
+
+        //  i was young and naive, but it works 
+
         this.setState({userInput : value})
         let holderUserInput = this.userInput
         let holderArr = this.state.arr
@@ -28,6 +31,8 @@ class Chooser extends Component{
         <div>
             <input onChange = {(e)=> this.handleChange(e.target.value)}/>
             <span >{JSON.stringify(this.state.outPutArr)}</span>
+
+
         </div>
         )
     }
